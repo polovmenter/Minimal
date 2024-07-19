@@ -1,0 +1,29 @@
+:root {
+    --template-width: 1440px;
+    --container-width: 940px;
+    --container-padding-x: 15px;
+    
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-dark-alt: #333333;
+    --color-accent: #8BCAC3;
+
+    --font-family-base: "Vollkorn", serif;
+    --font-family-accent: "Montserrat", sans-serif;
+
+    --transition-duration: 0.3s;
+}
+
+$template-width: var(--template-width);
+$container-width: var(--container-width);
+$container-padding-x: var(--container-padding-x);
+
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-dark-alt: var(--color-dark-alt);
+$color-accent: var(--color-accent);
+
+$font-family-base: var(--font-family-base);
+$font-family-accent: var(--font-family-accent);
+
+$transition-duration: var(--transition-duration)
