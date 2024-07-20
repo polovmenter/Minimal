@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__inner container">
-            <img class="logo__logo" src="./images/logo.png" alt="Minimal" width="155" height="70" loading="lazy">
+            <img class="header__logo logo" src="./images/logo.png" alt="Minimal" width="155" height="70" loading="lazy">
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="#">process</a></li>
@@ -28,6 +28,40 @@
             </button>
         </div>
     </header>
+    <main class="main">
+        <section class="first-screen" style="background-image: url(./images/first-screen-bg.jpg);">
+            <div class="first-screen__inner container">
+                <h1 class="first-screen__title">Making brands stand out is our obsession</h1>
+                <p class="first-screen__text">Let us help your brand stand out.</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__inner container">
+                <h2 class="title visually-hidden">About us</h2>
+                <p class="about__text">Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on design, consulting, technology, and photography. We’ve been building unique digital products, platforms, and experiences for the past 6 years. Let us help your company grow.</p>
+                <div class="about__button-wrapper">
+                    <a class="button" href="#">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <form class="footer__form" action="#">
+                <div class="footer__form-body">
+                    <input class="footer__input" type="text" placeholder="Name">
+                    <input class="footer__input" type="email" placeholder="Email">
+                    <input class="footer__input" type="number" placeholder="Budget">
+                    <textarea class="footer__input footer__input--textarea" placeholder="Describe youre project..."></textarea>
+                </div>
+                <button class="footer__button button">Send Message</button>
+            </form>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="./images/logo-small.png" alt="Minimal" width="43" height="46" loading="lazy">
+                <p class="footer__text">Minimal Template made in Webflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 

@@ -1,9 +1,21 @@
 .header {
     padding-block: 18px;
 
+    @include mobile {
+        padding-block: 10px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__logo {
+
+        @include mobile {
+            width: 130px;
+            height: auto;
+        }
     }
 }

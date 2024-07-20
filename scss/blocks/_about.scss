@@ -1,0 +1,25 @@
+.about {
+    padding-block: 60px;
+    background-color: #FEFEC9;
+    text-align: center;
+
+    @include desktop {
+        padding-block: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        @include desktop {
+            row-gap: 20px;
+        }
+    }
+
+    &__text {
+        @include fluid-text(15, 18);
+
+        line-height: 1.4;
+    }
+}

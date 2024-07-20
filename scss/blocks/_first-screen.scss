@@ -1,0 +1,66 @@
+.first-screen {
+    position: relative;
+    padding-block: 100px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+       padding-block: 50px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 52px;
+        height: 52px;
+        background-image: url(../../images/decor-cross.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__inner {
+        max-width: 700px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        @include fluid-text(30, 44);
+        
+        position: relative;
+        font-family: $font-family-accent;
+        font-weight: 400;
+        line-height: 1.25;
+        color: $color-light;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+        margin-bottom: 25px;
+
+        @include tablet {
+            padding-bottom: 18px;
+            margin-bottom: 15px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background-color: $color-light;
+        }
+    }
+
+    &__text {
+        color: $color-light;
+    }
+}

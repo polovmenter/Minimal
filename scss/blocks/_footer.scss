@@ -1,0 +1,78 @@
+.footer {
+    padding-block: 70px 75px;
+    background-color: $color-dark;
+    
+    @include mobile {
+        padding-block: 40px 45px;
+    }
+
+    &__inner {
+        max-width: 594px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 37px;
+
+        @include mobile {
+            row-gap: 30px;
+        }
+    }
+
+    &__form {
+        text-align: center;
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__input {
+        padding: 18px 30px;
+        background: rgba(255, 255, 255, 0.18);
+        font-family: $font-family-base;
+        font-style: italic;
+        font-size: 17px;
+        line-height: 1.3;
+        color: $color-light;
+
+        @include mobile {
+            padding: 15px 20px;
+        }
+
+        &:nth-child(even) {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        &::placeholder {
+            color: $color-light;
+        }
+
+        &--textarea {
+            height: 127px;
+            resize: none;
+        }
+    }
+
+    &__button {
+        padding-inline: 60px;
+        font-style: italic;
+        color: $color-accent;
+
+        @include mobile {
+            padding-inline: 50px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 14px;
+        text-align: center;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
