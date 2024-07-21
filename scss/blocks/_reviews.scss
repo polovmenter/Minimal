@@ -1,6 +1,6 @@
 .reviews {
     padding-block: 70px 100px;
-    background-color: #F5F5F5;
+    background-color: $color-gray;
     text-align: center;
 
     @include tablet {

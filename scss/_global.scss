@@ -1,7 +1,8 @@
 body {
+    @include fluid-text(14, 15);
+
     font-family: $font-family-base;
-    font-size: 15px;
-    line-height: 1.46;
+    line-height: 1.5;
     color: $color-dark-alt;
 }
 
