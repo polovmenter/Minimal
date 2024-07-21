@@ -1,7 +1,7 @@
 $desktop: 1200px;
 $tablet: 1025px;
 $mobile: 768px;
-$mobile-s: 520px;
+$mobile-s: 550px;
 
 @mixin desktop {
     @media (max-width: $desktop) {

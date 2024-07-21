@@ -1,0 +1,51 @@
+.projects {
+    padding-block: 80px 90px;
+    background-color: $color-gray;
+
+    @include tablet {
+        padding-block: 60px 70px;
+    }
+
+    @include mobile {
+        padding-block: 40px 50px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 43px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        max-width: 300px;
+        justify-self: center;
+
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 4px;
+            padding: 20px;
+            background-color: $color-light;
+            text-align: center;
+        }
+    }
+}
