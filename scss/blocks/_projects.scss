@@ -32,7 +32,26 @@
 
     &__item {
         max-width: 300px;
-        justify-self: center;
+
+        @include tablet {
+            &:nth-child(odd){ 
+                justify-self: end;
+            }
+
+            &:nth-child(even) {
+                justify-self: start;
+            }
+        }
+
+        @include mobile {
+            &:nth-child(odd){ 
+                justify-self: center;
+            }
+
+            &:nth-child(even) {
+                justify-self: center;
+            }
+        }
 
         &-image {
             width: 100%;

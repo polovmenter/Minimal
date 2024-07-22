@@ -1,0 +1,93 @@
+.team {
+    padding-block: 80px 100px;
+
+    @include tablet {
+        padding-block: 50px 70px;
+    }
+
+    @include mobile {
+        padding-block: 40px 60px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 43px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include mobile-s {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 220px;
+
+        @include tablet {
+            &:nth-child(odd) {
+                justify-self: end;
+            }
+
+            &:nth-child(even) {
+                justify-self: start;
+            }
+        }
+
+        @include mobile-s {
+            &:nth-child(odd) {
+                justify-self: center;
+            }
+
+            &:nth-child(even) {
+                justify-self: center;
+            }
+        }
+
+        &-image {
+            margin-bottom: 20px;
+
+            @include tablet {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-name {
+            margin-bottom: 6px;
+        }
+
+        &-post {
+            margin-bottom: 30px;
+
+            @include tablet {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 6px;
+
+        &-link {
+            width: 29px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-gray;
+        }
+    }
+}
