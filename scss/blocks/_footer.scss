@@ -59,6 +59,11 @@
         font-style: italic;
         color: $color-accent;
 
+        @include hover {
+            background-color: $color-accent;
+            border-color: $color-accent;
+        }
+
         @include mobile {
             padding-inline: 50px;
         }

@@ -1,6 +1,8 @@
 :root {
     --container-width: 940px;
     --container-padding-x: 15px;
+
+    --header-height: 106px;
     
     --color-light: #FFFFFF;
     --color-dark: #000000;
@@ -12,11 +14,16 @@
     --font-family-accent: "Montserrat", sans-serif;
 
     --transition-duration: 0.3s;
+
+    @media (max-width: 768px) {
+        --header-height: 79px;
+    }
 }
 
-$template-width: var(--template-width);
 $container-width: var(--container-width);
 $container-padding-x: var(--container-padding-x);
+
+$header-height: var(--header-height);
 
 $color-light: var(--color-light);
 $color-dark: var(--color-dark);

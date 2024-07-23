@@ -7,4 +7,10 @@
     line-height: 1.25;
     color: $color-dark-alt;
     background-color: transparent;
+
+    @include hover {
+        color: $color-light;
+        border-color: $color-dark-alt;
+        background-color: $color-dark-alt;
+    }
 }

@@ -1,5 +1,13 @@
 .header {
-    padding-block: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $color-light;
+    height: $header-height;
+    z-index: 1;
+    display: flex;
+    align-items: center;
 
     @include mobile {
         padding-block: 10px;
@@ -9,6 +17,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-basis: 100%;
     }
 
     &__logo {
