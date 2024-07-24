@@ -1,6 +1,7 @@
 .projects {
     padding-block: 80px 90px;
     background-color: $color-gray;
+    position: relative;
 
     @include tablet {
         padding-block: 60px 70px;
